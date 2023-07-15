@@ -1,6 +1,10 @@
-import Link from "next/link"
+"use client"
+import useAuth from "@/hooks/useAuth";
+import Link from "next/link";
 
 const Navbar = () => {
+    const {user} = useAuth()
+    
 
     let navbar = <>
         <li><Link href={'/'}>Home</Link></li>

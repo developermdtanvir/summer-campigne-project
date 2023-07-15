@@ -1,8 +1,14 @@
 'use client'
+
+import useAuth from "@/hooks/useAuth";
+
 const Login = () => {
+
+    const {signInWithEmail,loginWithGoogle} = useAuth()
+
     const handleLogin = (e:any) => {
         e.preventDefault();
-        console.log(e.target.name.value)
+        signInWithEmail(e.target.email.value,e.target.password.value)
     }
 
   return (
@@ -14,6 +20,7 @@ const Login = () => {
                 <input className="input" type="password" name="password" id="password" placeholder="Password" />
                 <button className="btn">Submit</button>
             </form>
+            <button onClick={()=>loginWithGoogle()} className="btn btn-primary">Login With Google</button>
         </div>
     </div>
   )
