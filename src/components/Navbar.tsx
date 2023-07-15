@@ -7,6 +7,7 @@ const Navbar = () => {
         <li><Link href={'/'}>Instructors</Link></li>
         <li><Link href={'/'}>Classes</Link></li>
         <li><Link href={'/'}>Dashboard</Link></li>
+        <li><Link href={'/'}>Login</Link></li>
     </>
 
 
