@@ -1,17 +1,18 @@
 "use client"
 import { app } from '@/Firebase/firebase.config'
-import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth'
+import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, signInWithPopup } from 'firebase/auth'
 import { createContext } from "react"
 
 interface AuthContextValue {
     user: boolean
     signInWithEmail: Function
     loginWithGoogle : Function 
+    signupWithEmail: Function
   }
   
   export const AuthContext = createContext<AuthContextValue>(null)
 
-  type EmailProps = {password:string,email:string}
+  type EmailProps = {email:string,password:string}
 
 
   
@@ -27,16 +28,21 @@ interface AuthContextValue {
         }
 
 
-        const signInWithEmail = (props:EmailProps) =>{
-            console.log(props.email,props.password);
+        const signInWithEmail = (email:string,password:string) =>{
+           return signInWithEmailAndPassword(auth,email,password)
             
+        }
+
+        const signupWithEmail = (password:string,email:string) => {
+             return createUserWithEmailAndPassword(auth,email,password)
         }
 
 
     const authInfo:AuthContextValue = {
         user:true,
         signInWithEmail,
-        loginWithGoogle
+        loginWithGoogle,
+        signupWithEmail
     }
 
     return <AuthContext.Provider value={authInfo}>
