@@ -3,16 +3,17 @@ import useAuth from "@/hooks/useAuth";
 import Link from "next/link";
 
 const Navbar = () => {
-    const {user} = useAuth()
-    
+    const {user,signout} = useAuth()
+    console.log(user);
 
     let navbar = <>
         <li><Link href={'/'}>Home</Link></li>
         <li><Link href={'/'}>Instructors</Link></li>
         <li><Link href={'/'}>Classes</Link></li>
         <li><Link href={'/'}>Dashboard</Link></li>
-        <li><Link href={'/'}>Login</Link></li>
+        {user ? <li onClick={()=>signout()}><Link href={''}>Logout</Link></li> : <li><Link href={'/login'}>Login</Link></li>}
     </>
+
 
 
   return (

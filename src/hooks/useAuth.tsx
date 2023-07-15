@@ -1,13 +1,17 @@
 import { AuthContext } from "@/Context/AuthContext";
 import { useContext } from "react";
 
+
 const useAuth = () => {
-  const   {user,signInWithEmail,loginWithGoogle,signupWithEmail} = useContext(AuthContext);
+
+  const   {user,signInWithEmail,loginWithGoogle,signupWithEmail,updateUser,signout} = useContext(AuthContext);
   return {
     user,
     signInWithEmail,
     loginWithGoogle,
-    signupWithEmail
+    signupWithEmail,
+    updateUser,
+    signout
   }
 }
 
