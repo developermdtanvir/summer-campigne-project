@@ -1,0 +1,4 @@
+.bg-image{
+    background-image: url('./../../../assets/authentication.jpg');
+    background-size: cover;
+}
