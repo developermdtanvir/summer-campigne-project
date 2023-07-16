@@ -4,6 +4,7 @@ import LoginImage from '@/assets/authentication.jpg';
 import useAuth from "@/hooks/useAuth";
 import { UserCredential } from "firebase/auth";
 import Image from "next/image";
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
 import { useForm } from "react-hook-form";
@@ -44,8 +45,9 @@ const Login = () => {
                     </form>
                     <div className="divider text-black">OR</div>
                 </div>
-                <div className='flex justify-center items-center'>
+                <div className='flex flex-col space-y-10 justify-center items-center'>
                     <button onClick={()=>loginWithGoogle()} className='btn'>Login With Google</button>
+                    <span className='text-black'>Your are new user <Link className="text-blue-500" href='/signup'>Register now</Link></span>
                 </div>
             </div>
             <div className='lg:w-1/2'>

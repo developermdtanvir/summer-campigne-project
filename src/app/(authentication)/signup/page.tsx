@@ -3,6 +3,7 @@ import LoginImage from '@/assets/authentication.jpg';
 import useAuth from "@/hooks/useAuth";
 import { User, UserCredential } from "firebase/auth";
 import Image from 'next/image';
+import Link from 'next/link';
 import { useForm } from "react-hook-form";
 const Register = () => {
 
@@ -34,8 +35,9 @@ const Register = () => {
                     </form>
                     <div className="divider text-black">OR</div>
                 </div>
-                <div className='flex justify-center items-center'>
+                <div className='flex flex-col space-y-5 justify-center items-center'>
                     <button onClick={()=>loginWithGoogle()} className='btn'>Login With Google</button>
+                    <span className='text-black'>Are you already register <Link className="text-blue-500" href='/login'>Login now</Link></span>
                 </div>
             </div>
             <div className='lg:w-1/2'>
