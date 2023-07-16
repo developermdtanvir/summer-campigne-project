@@ -2,7 +2,7 @@ import logo from '@/assets/logo.svg'
 import Image from 'next/image'
 const Footer = () => {
   return (
-    <footer className="footer p-10 text-base-content my-5 bg-white rounded-md">
+    <footer className="footer p-10 text-black my-5 bg-white rounded-md">
   <div>
     <Image src={logo} alt='logo'/>
     <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>

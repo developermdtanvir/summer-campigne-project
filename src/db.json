@@ -1,0 +1,185 @@
+{
+    "countries": [
+      {
+        "id": "1",
+        "name": "United States",
+        "language": "English",
+        "capital": "Washington, D.C.",
+        "population": 331449281,
+        "currency": "United States Dollar",
+        "flag": "https://i.ibb.co/3zNnBWw/usa.jpg"
+      },
+      {
+        "id": "2",
+        "name": "United Kingdom",
+        "language": "English",
+        "capital": "London",
+        "population": 67886004,
+        "currency": "Pound Sterling",
+        "flag": "https://i.ibb.co/CwYBK5v/uk.jpg"
+      },
+      {
+        "id": "3",
+        "name": "Canada",
+        "language": "English, French",
+        "capital": "Ottawa",
+        "population": 38005238,
+        "currency": "Canadian Dollar",
+        "flag": "https://i.ibb.co/QfKWK2p/canada.jpg"
+      },
+      {
+        "id": "4",
+        "name": "Australia",
+        "language": "English",
+        "capital": "Canberra",
+        "population": 25765345,
+        "currency": "Australian Dollar",
+        "flag": "https://i.ibb.co/VqmvRXq/austrollia.jpg"
+      },
+      {
+        "id": "5",
+        "name": "Spain",
+        "language": "Spanish",
+        "capital": "Madrid",
+        "population": 46659302,
+        "currency": "Euro",
+        "flag": "https://i.ibb.co/7YT05BJ/spain.jpg"
+      },
+      {
+        "id": "6",
+        "name": "Mexico",
+        "language": "Spanish",
+        "capital": "Mexico City",
+        "population": 129166028,
+        "currency": "Mexican Peso",
+        "flag": "https://i.ibb.co/0KvvhFh/maxico.jpg"
+      },
+      {
+        "id": "7",
+        "name": "Argentina",
+        "language": "Spanish",
+        "capital": "Buenos Aires",
+        "population": 45788840,
+        "currency": "Argentine Peso",
+        "flag": "https://i.ibb.co/XVqHpnN/argentina.jpg"
+      },
+      {
+        "id": "8",
+        "name": "Colombia",
+        "language": "Spanish",
+        "capital": "Bogotá",
+        "population": 50976248,
+        "currency": "Colombian Peso",
+        "flag": "https://i.ibb.co/09pxTD0/colombia.jpg"
+      },
+      {
+        "id": "9",
+        "name": "France",
+        "language": "French",
+        "capital": "Paris",
+        "population": 65376387,
+        "currency": "Euro",
+        "flag": "https://i.ibb.co/fGvJ8rg/france.jpg"
+      },
+      {
+        "id": "10",
+        "name": "Belgium",
+        "language": "Dutch, French, German",
+        "capital": "Brussels",
+        "population": 11632335,
+        "currency": "Euro",
+        "flag": "https://i.ibb.co/BfZGFDF/belgium.jpg"
+      },
+      {
+        "id": "11",
+        "name": "Switzerland",
+        "language": "German, French, Italian",
+        "capital": "Bern",
+        "population": 8715496,
+        "currency": "Swiss Franc",
+        "flag": "https://example.com/images/switzerland-flag.png"
+      },
+      {
+        "id": "12",
+        "name": "Germany",
+        "language": "German",
+        "capital": "Berlin",
+        "population": 83783942,
+        "currency": "Euro",
+        "flag": "https://example.com/images/germany-flag.png"
+      },
+      {
+        "id": "13",
+        "name": "Italy",
+        "language": "Italian",
+        "capital": "Rome",
+        "population": 60367407,
+        "currency": "Euro",
+        "flag": "https://example.com/images/italy-flag.png"
+      },
+      {
+        "id": "14",
+        "name": "Russia",
+        "language": "Russian",
+        "capital": "Moscow",
+        "population": 144373535,
+        "currency": "Russian Ruble",
+        "flag": "https://example.com/images/russia-flag.png"
+      },
+      {
+        "id": "15",
+        "name": "China",
+        "language": "Chinese",
+        "capital": "Beijing",
+        "population": 1444216107,
+        "currency": "Renminbi",
+        "flag": "https://example.com/images/china-flag.png"
+      },
+      {
+        "id": "16",
+        "name": "Japan",
+        "language": "Japanese",
+        "capital": "Tokyo",
+        "population": 126050804,
+        "currency": "Japanese Yen",
+        "flag": "https://example.com/images/japan-flag.png"
+      },
+      {
+        "id": "17",
+        "name": "India",
+        "language": "Hindi, English",
+        "capital": "New Delhi",
+        "population": 1393409038,
+        "currency": "Indian Rupee",
+        "flag": "https://example.com/images/india-flag.png"
+      },
+      {
+        "id": "18",
+        "name": "Brazil",
+        "language": "Portuguese",
+        "capital": "Brasília",
+        "population": 214288287,
+        "currency": "Brazilian Real",
+        "flag": "https://example.com/images/brazil-flag.png"
+      },
+      {
+        "id": "19",
+        "name": "South Korea",
+        "language": "Korean",
+        "capital": "Seoul",
+        "population": 51269183,
+        "currency": "South Korean Won",
+        "flag": "https://example.com/images/south-korea-flag.png"
+      },
+      {
+        "id": "20",
+        "name": "Turkey",
+        "language": "Turkish",
+        "capital": "Ankara",
+        "population": 83154997,
+        "currency": "Turkish Lira",
+        "flag": "https://example.com/images/turkey-flag.png"
+      }
+    ]
+  }
+  
