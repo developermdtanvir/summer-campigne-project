@@ -1,10 +1,23 @@
-import Carosel from "@/components/Carosel"
+import Carosel from "@/components/Carosel";
+import Country from "@/components/Country";
+import loadAllCountris from "@/utils/loadAllCountris";
 
-export default function Home() {
+export default async function Home () {
+
+  const data = await loadAllCountris();
+
+ 
   return (
     <main className="">
       <Carosel />
-      <h1>This is a home page</h1>
+      <div className="flex justify-center py-10 font-bold text-3xl">
+        <p>Our Services</p>
+      </div>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-3">
+          {
+          data.slice(0,10).map(item => <Country item={item} />)
+          }
+        </div>
     </main>
   )
 }

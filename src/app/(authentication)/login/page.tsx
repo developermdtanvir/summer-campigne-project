@@ -33,6 +33,8 @@ const Login = () => {
         }
     },[router,user])
 
+    
+
   return (
     <div className=" bg-white lg:h-screen flex justify-center items-center">
         <div className='flex lg:flex-row flex-col p-5'>
