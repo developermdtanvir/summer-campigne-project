@@ -1,5 +1,7 @@
 "use client"
+import logo from '@/assets/logo.svg';
 import useAuth from "@/hooks/useAuth";
+import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
@@ -33,7 +35,9 @@ const Navbar = () => {
          {navbar}
         </ul>
       </div>
-      <a className="btn btn-ghost normal-case text-xl">summer campigne</a>
+      <a className="btn btn-ghost normal-case text-xl">
+        <Image  src={logo} alt="logo" />
+      </a>
     </div>
     <div className="navbar-center hidden lg:flex">
       <ul className="menu menu-horizontal px-1">

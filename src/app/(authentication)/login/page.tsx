@@ -39,8 +39,8 @@ const Login = () => {
             <div className="lg:w-1/2 mx-auto lg:p-20 p-5">
                 <div>
                     <form className="form-control space-y-4" onSubmit={handleSubmit(handleLogin)} action="">
-                        <input {...register('email')} className="input" type="email" name="email" id="email" placeholder="Email" />
-                        <input {...register('password')} className="input" type="password" name="password" id="password" placeholder="Password" />
+                        <input {...register('email',{pattern:/^\S+@\S+\.\S+$/,required:true})} className="input" type="email" name="email" id="email" placeholder="Email" />
+                        <input {...register('password',{pattern:/^.{6,}$/,required:true})} className="input" type="password" name="password" id="password" placeholder="Password" />
                         <button className="btn">Login</button>
                     </form>
                     <div className="divider text-black">OR</div>
