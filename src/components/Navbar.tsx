@@ -11,7 +11,7 @@ const Navbar = () => {
     let navbar = <>
         <li><Link href={'/'}>Home</Link></li>
         <li><Link href={'/'}>Instructors</Link></li>
-        <li><Link href={'/'}>Classes</Link></li>
+        <li><Link href={'/all-course'}>Classes</Link></li>
         <li><Link href={'/'}>Dashboard</Link></li>
         {user ? <li onClick={()=>signout()}><Link href={''}>Logout</Link></li> : <li><Link href={'/login'}>Login</Link></li>}
         {/* { user && <div className="avatar">
